@@ -1,11 +1,12 @@
-package com.example.jobques
+package com.example.jobques.ui.login
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import com.example.jobques.R
 
-class Login2 : ComponentActivity(){
+class signin : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login2)
+        setContentView(R.layout.signin)
     }
 }

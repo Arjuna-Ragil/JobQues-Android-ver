@@ -1,7 +1,18 @@
 <resources>
+<!--app-->
     <string name="app_name">JobQues</string>
+
+<!--login page 1-->
     <string name="login1">Find Your Dream Job</string>
     <string name="login2">Carilah pekerjaan idaman kamu dengan aplikasi kami</string>
     <string name="nextBtn">Next</string>
-    <string name="test">test</string>
+    <string name="loginImage1">Login Image 1</string>
+
+<!--login page 2-->
+    <string name="backBtn">Back</string>
+    <string name="signupBtn">Sign Up</string>
+    <string name="signinBtn">Sign In</string>
+
+<!--testing-->
+    <string name="test">Test</string>
 </resources>

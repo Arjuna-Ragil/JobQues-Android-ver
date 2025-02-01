@@ -1,9 +1,10 @@
-package com.example.jobques
+package com.example.jobques.ui.login
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
+import com.example.jobques.R
 
 class Login1 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
