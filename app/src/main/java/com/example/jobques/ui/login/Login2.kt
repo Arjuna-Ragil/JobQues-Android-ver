@@ -3,15 +3,22 @@ package com.example.jobques.ui.login
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
 import com.example.jobques.R
+import com.google.firebase.auth.FirebaseAuth
 
 class Login2 : ComponentActivity(){
+
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login2)
 
-        val btn1: Button = findViewById(R.id.loginBack)
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        val btn1: ImageButton = findViewById(R.id.loginBack)
         btn1.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }

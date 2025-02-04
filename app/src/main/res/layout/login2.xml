@@ -5,11 +5,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Button
+    <ImageButton
         android:id="@+id/loginBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/backBtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/backques2"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/backBtn"
         android:layout_marginTop="50dp"
         android:layout_marginStart="20dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,37 +39,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginLogo2"/>
 
-    <Button
-        android:id="@+id/btn1"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/test"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="0dp"
+        android:background="@drawable/loginsecbg"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title"/>
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/signInBtn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/signinBtn"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn1"/>
 
-    <Button
-        android:id="@+id/signUpBtn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/signupBtn"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signInBtn1"/>
+        <Button
+            android:id="@+id/signInBtn1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="#D14700"
+            android:text="@string/signinBtn"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
+        <LinearLayout
+            android:id="@+id/googleSignIn"
+            android:background="@drawable/login_border"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/signInBtn1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#EBEBEB"
+                android:contentDescription="@string/googlelogo"
+                android:src="@drawable/googlelogo" />
+
+            <Button
+                android:id="@+id/signInGoogleBtn"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#EBEBEB"
+                android:text="@string/signInGoogleBtn"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/signUpBtn1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/signupBtn"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="#D14700"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/googleSignIn"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.JobQues" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.Login.JobQues" parent="android:Theme.Material.Light.NoActionBar">
         <item name="colorPrimary">#E65100</item>
-        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:windowBackground">@drawable/loginmainbg</item>
+        <item name="colorAccent">#E65100</item>
     </style>
 </resources>

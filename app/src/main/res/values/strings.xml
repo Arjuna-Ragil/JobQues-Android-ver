@@ -10,15 +10,19 @@
 
 <!--login page 2-->
     <string name="backBtn">Back</string>
+    <string name="signInGoogleBtn">Sign up with Google</string>
+    <string name="googlelogo">Google Logo</string>
     <string name="signupBtn">Sign Up</string>
     <string name="signinBtn">Sign In</string>
 
-<!--Sign Up-->
+<!--Sign Up / Sign In-->
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="repassword">Confirm Password</string>
     <string name="usernameoremail">Username/Email</string>
+    <string name="signIn">Already have an account? Sign In</string>
+    <string name="signUp">Dont have an account? Sign Up</string>
 
 
 <!--home-->
