@@ -13,17 +13,16 @@ class Login2 : ComponentActivity(){
 
         val btn1: Button = findViewById(R.id.loginBack)
         btn1.setOnClickListener {
-            val intent = Intent(this, Login1::class.java)
-            startActivity(intent)
+            onBackPressedDispatcher.onBackPressed()
         }
 
-        val btn2: Button = findViewById(R.id.signInBtn)
+        val btn2: Button = findViewById(R.id.signInBtn1)
         btn2.setOnClickListener {
             val intent = Intent(this, signin::class.java)
             startActivity(intent)
         }
 
-        val btn3: Button = findViewById(R.id.signUpBtn)
+        val btn3: Button = findViewById(R.id.signUpBtn1)
         btn3.setOnClickListener {
             val intent = Intent(this, signup::class.java)
             startActivity(intent)

@@ -2,6 +2,6 @@
 <resources>
     <style name="Theme.JobQues" parent="android:Theme.Material.Light.NoActionBar">
         <item name="colorPrimary">#E65100</item>
-        <item name="android:windowBackground">#FFF8E1</item>
+        <item name="android:windowBackground">#FFFFFF</item>
     </style>
 </resources>

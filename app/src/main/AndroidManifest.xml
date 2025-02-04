@@ -35,6 +35,10 @@
         <activity
             android:name=".ui.login.signup"
             android:theme="@style/Theme.JobQues"/>
+
+        <activity
+            android:name=".ui.home.homeTest"
+            android:theme="@style/Theme.JobQues"/>
     </application>
 
 </manifest>

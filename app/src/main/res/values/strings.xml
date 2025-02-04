@@ -13,6 +13,17 @@
     <string name="signupBtn">Sign Up</string>
     <string name="signinBtn">Sign In</string>
 
+<!--Sign Up-->
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repassword">Confirm Password</string>
+    <string name="usernameoremail">Username/Email</string>
+
+
+<!--home-->
+    <string name="logout">logout</string>
+
 <!--testing-->
     <string name="test">Test</string>
 </resources>
