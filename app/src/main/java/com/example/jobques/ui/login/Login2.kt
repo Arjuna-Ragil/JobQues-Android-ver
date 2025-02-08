@@ -61,6 +61,9 @@ class Login2 : ComponentActivity() {
                 }
             }
 
+        //auto start
+        startOneTapSignIn()
+
         val googleSignInButton: Button = findViewById(R.id.signInGoogleBtn)
         googleSignInButton.setOnClickListener {
             startOneTapSignIn()
@@ -83,6 +86,8 @@ class Login2 : ComponentActivity() {
             startActivity(intent)
         }
     }
+
+    //Untuk sign in
 
     private fun handleSignInCredential(credential: SignInCredential) {
         val idToken = credential.googleIdToken
