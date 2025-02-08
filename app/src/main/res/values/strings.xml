@@ -1,6 +1,7 @@
 <resources>
 <!--app-->
     <string name="app_name">JobQues</string>
+    <string name="web_client_id">132913091365-c5jbbbs6ls1g0nvusbs6j588t55rpma3.apps.googleusercontent.com</string>
 
 <!--login page 1-->
     <string name="login1">Find Your Dream Job</string>
@@ -10,15 +11,19 @@
 
 <!--login page 2-->
     <string name="backBtn">Back</string>
+    <string name="signInGoogleBtn">Sign up with Google</string>
+    <string name="googlelogo">Google Logo</string>
     <string name="signupBtn">Sign Up</string>
     <string name="signinBtn">Sign In</string>
 
-<!--Sign Up-->
+<!--Sign Up / Sign In-->
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="repassword">Confirm Password</string>
     <string name="usernameoremail">Username/Email</string>
+    <string name="signIn">Already have an account? Sign In</string>
+    <string name="signUp">Dont have an account? Sign Up</string>
 
 
 <!--home-->
@@ -26,4 +31,5 @@
 
 <!--testing-->
     <string name="test">Test</string>
+
 </resources>

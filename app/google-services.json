@@ -12,7 +12,20 @@
           "package_name": "com.example.jobques"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "132913091365-vbeu8p5uo3b868hk0ccidejfd06ab4nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobques",
+            "certificate_hash": "72da755655e21eee12ba441491aa984aec270ead"
+          }
+        },
+        {
+          "client_id": "132913091365-c5jbbbs6ls1g0nvusbs6j588t55rpma3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC-z4ujc7sPau--klwQvZlT0eJs-hxM9j0"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132913091365-c5jbbbs6ls1g0nvusbs6j588t55rpma3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

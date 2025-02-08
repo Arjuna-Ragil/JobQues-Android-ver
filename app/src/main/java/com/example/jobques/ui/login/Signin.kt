@@ -2,7 +2,7 @@ package com.example.jobques.ui.login
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.example.jobques.R
@@ -31,6 +31,7 @@ class signin : ComponentActivity() {
                     if (it.isSuccessful) {
                         val intent = Intent(this, homeTest::class.java)
                         startActivity(intent)
+                        finish()
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }
@@ -41,9 +42,15 @@ class signin : ComponentActivity() {
             }
 
 
-        val btn1: Button = findViewById(R.id.loginBack2)
+        val btn1: ImageButton = findViewById(R.id.loginBack2)
         btn1.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
+        }
+
+        binding.switchSignUp.setOnClickListener {
+            val intent = Intent(this, signup::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

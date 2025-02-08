@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.example.jobques.R
@@ -25,17 +26,17 @@ class signup : ComponentActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.signUpBtn2.setOnClickListener {
-            val username = binding.username.text.toString()
             val email = binding.email.text.toString()
             val password = binding.password1.text.toString()
             val confirmPassword = binding.repassword.text.toString()
 
-            if (username.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+            if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
                 if (password == confirmPassword) {
                     firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                         if (it.isSuccessful) {
                             val intent = Intent(this, homeTest::class.java)
                             startActivity(intent)
+                            finish()
                         } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }
@@ -48,9 +49,15 @@ class signup : ComponentActivity() {
             }
         }
 
-        val btn1: Button = findViewById(R.id.loginBack2)
+        val btn1: ImageButton = findViewById(R.id.loginBack2)
         btn1.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
+        }
+
+        binding.switchSignIn.setOnClickListener {
+            val intent = Intent(this, signin::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
