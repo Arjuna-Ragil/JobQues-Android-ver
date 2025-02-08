@@ -1,6 +1,7 @@
 <resources>
 <!--app-->
     <string name="app_name">JobQues</string>
+    <string name="web_client_id">132913091365-c5jbbbs6ls1g0nvusbs6j588t55rpma3.apps.googleusercontent.com</string>
 
 <!--login page 1-->
     <string name="login1">Find Your Dream Job</string>
@@ -30,4 +31,5 @@
 
 <!--testing-->
     <string name="test">Test</string>
+
 </resources>
